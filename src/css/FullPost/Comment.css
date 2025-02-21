@@ -1,0 +1,167 @@
+.commentCreate {
+  border-bottom: 1px solid black;
+
+  padding: 0 20px;
+}
+.btn-post {
+  cursor: pointer;
+}
+.CommentTextInput {
+  background: none;
+  border: 0px;
+  border-bottom: 1px solid black;
+  padding: 10px 0px;
+  outline: none;
+  width: 500px;
+}
+.text-add-comment {
+  font-size: 24px;
+}
+.Avatar {
+  width: 75px;
+  height: 75px;
+}
+.name-text {
+  margin-left: 20px;
+}
+.bottom-comment {
+  width: initial;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Comment-People {
+  position: relative;
+
+  width: 100%;
+  align-items: center;
+  margin: 40px 0px;
+}
+.Avatar-commentText {
+  display: flex;
+  align-items: center;
+}
+.Avatar-comment {
+  margin-left: 10px;
+  width: 75px;
+}
+.commentText {
+  margin-left: 10px;
+}
+.Grade-Comment {
+  display: flex;
+  align-items: center;
+  margin: 0px 20px;
+}
+.Comment-People:hover .btn-redactor-delete {
+  opacity: 1;
+}
+.btn-redactor-delete {
+  opacity: 0;
+  transition: all 0.33s;
+}
+
+.redact-comment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.btn-redactor-comment {
+  position: absolute;
+  right: 10px;
+}
+.label-commentText {
+  position: absolute;
+  margin-top: -60px;
+}
+.label-commentText.error {
+  color: rgb(255, 84, 84);
+}
+.CommentTextInput.error {
+  border-bottom: 1px solid rgb(255, 84, 84);
+}
+.Close-redit-comment {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.errorsFlex {
+  display: flex;
+  align-items: center;
+}
+.fullName-user {
+  margin: 0px 20px;
+  margin-left: 0;
+  color: rgb(95, 95, 255);
+  text-decoration: none;
+}
+.fullName-user:hover {
+  margin: 0px 20px;
+  margin-left: 0;
+  color: rgb(75, 75, 254);
+  text-decoration: underline;
+}
+.editComment-label {
+  margin-top: -42px;
+  font-size: 12px;
+}
+@media screen and (max-width: 900px) {
+  .text-add-comment {
+    display: none;
+  }
+  .btn-redactor-delete {
+    opacity: 1;
+    transition: all 0.33s;
+  }
+  .bottom-comment {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .label-commentText {
+    margin-top: -30px;
+  }
+  .Post.width.auto {
+    width: auto;
+    height: auto;
+  }
+  .btn-redactor-delete.post-hover {
+    opacity: 1;
+  }
+  .comment-item-btn-top {
+    opacity: 1;
+    top: -30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .CommentTextInput {
+    width: 200px;
+  }
+  .redact-comment {
+    height: 100%;
+    flex-direction: column;
+  }
+  .errorsFlex {
+    display: none;
+  }
+  .Close-redit-comment {
+    top: -30px;
+    right: 10px;
+  }
+  .btn-redactor-comment {
+    position: static;
+    margin-top: 10px;
+    padding: 5px 7px;
+  }
+  .redact-comment {
+    align-items: initial;
+    justify-content: initial;
+  }
+  .commentText {
+    margin-top: 30px;
+  }
+}

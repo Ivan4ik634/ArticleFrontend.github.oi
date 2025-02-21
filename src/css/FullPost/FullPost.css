@@ -1,0 +1,58 @@
+.top-post.off {
+  cursor: auto;
+  height: 300px;
+}
+.top-post.img {
+  width: 100%;
+}
+.Post.width {
+  width: 1000px;
+  height: auto;
+}
+.Post.imgNot {
+  height: auto;
+}
+.user-profil {
+  color: rgb(95, 95, 255);
+  text-decoration: none;
+}
+.user-profil:hover {
+  text-decoration: underline;
+}
+.subscribe-btn {
+  background: rgb(255, 90, 90);
+  padding: 5px 15px;
+  margin: 0 10px;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.33s;
+}
+.subscribe-btn:hover {
+  background: rgb(211, 66, 66);
+}
+.notSubscribe {
+  background: rgb(182, 182, 182);
+  transition: all 0.33s;
+}
+.notSubscribe:hover {
+  background: rgb(151, 151, 151);
+}
+.img {
+  object-fit: cover;
+  width: 100%;
+}
+.padding-left-none {
+  margin-left: 0px;
+}
+.mobile {
+  top: 30px;
+}
+.gorizont {
+  display: flex;
+}
+@media screen and (max-width: 500px) {
+  .mobile {
+    top: 330px;
+  }
+}

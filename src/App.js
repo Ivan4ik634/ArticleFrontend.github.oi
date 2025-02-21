@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import RegisterPage from './pages/RegisterPage';
+import LoginPage from './pages/LoginPage';
+import EditPostPage from './pages/EditPostPage';
+import ProfilePage from './pages/ProfilePage';
+import PostPage from './pages/PostPage';
+import ProfileUser from './pages/ProfileUser';
+import { SubscribePage, SubscribeToMePage } from './pages/StaticProfile';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="Article/" element={<HomePage />} />
+      <Route path="Article/home" element={<HomePage />} />
+      <Route path="Article/register" element={<RegisterPage />} />
+      <Route path="Article/login" element={<LoginPage />} />
+      <Route path="Article/post/:id" element={<PostPage />} />
+      <Route path="Articleprofile/:id" element={<ProfileUser />} />
+      <Route path="Article/editPost" element={<EditPostPage />} />
+      <Route path="Article/profile" element={<ProfilePage />} />
+
+      <Route path="Article/subscribeToMe" element={<SubscribeToMePage />} />
+      <Route path="Article/subscribe" element={<SubscribePage />} />
+    </Routes>
   );
 }
 
